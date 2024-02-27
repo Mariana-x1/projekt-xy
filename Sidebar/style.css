@@ -61,3 +61,20 @@
   height: 60px;
   white-space: nowrap;
 }
+
+.content {
+  position: absolute;
+  width: calc(100% - 260px);
+  left: 260px;
+  min-height: 100vh;
+  transition: 0.5s ease;
+}
+
+.top-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 20px;
+  box-shadow: o 2px 4px rgb(0 0 0 / 10%);
+}
