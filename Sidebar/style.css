@@ -78,3 +78,17 @@
   padding: 7px 20px;
   box-shadow: o 2px 4px rgb(0 0 0 / 10%);
 }
+
+.profile img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#menu-icon {
+  font-size: 34px;
+  cursor: pointer;
+}
