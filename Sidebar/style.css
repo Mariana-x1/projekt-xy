@@ -68,6 +68,7 @@
   left: 260px;
   min-height: 100vh;
   transition: 0.5s ease;
+  background-color: aqua;
 }
 
 .top-navbar {
@@ -91,4 +92,29 @@
 #menu-icon {
   font-size: 34px;
   cursor: pointer;
+}
+
+.content.active {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.side-navbar.active {
+  width: 60px;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    left: 0;
+  }
+  .side-navbar {
+    width: 60px;
+    left: -60px;
+  }
+  .content.active {
+    width: calc(100% - 60%);
+    left: 60px;
+  }
+  .side-navbar.active {
+    left: 0;
+  }
 }
