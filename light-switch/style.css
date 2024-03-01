@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -19,6 +25,14 @@ body {
   cursor: pointer;
   border: none;
   background-color: #21f344;
-  color: white;
+  color: yellow;
   border-radius: 5px;
+}
+
+.light-on {
+  background-color: #ffffff;
+}
+
+.light-off {
+  background-color: #000000;
 }

@@ -9,10 +9,14 @@ button.addEventListener("click", () => {
 
 function toggleLight() {
   if (isLightOn) {
-    body.style.backgroundColor = "#FFFFFF";
+    // body.style.backgroundColor = "#FFFFFF";
+    body.classList.remove("light-off");
+    body.classList.add("light-on");
     document.title = "Good Morning";
   } else {
-    body.style.backgroundColor = "#000000";
+    // body.style.backgroundColor = "#000000";
+    body.classList.remove("light-on");
+    body.classList.add("light-off");
     document.title = "Good Night";
   }
 }
