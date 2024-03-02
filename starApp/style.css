@@ -1,0 +1,93 @@
+/*  ein eineckige star erstellen*/
+/*.star {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 40px solid yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(35deg);
+  animation: twinkle 1s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% {
+    transform: translate(-50%, -50%) rotate(35deg) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(35deg) scale(1.2);
+  }
+}
+*/
+
+/*ein 5 eckiges star erstellen:*/
+/*
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.star:before,
+.star:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid rgb(241, 241, 11);
+  border-left: 50px solid transparent;
+  transform: rotate(39deg);
+}
+
+.star:after {
+  transform: rotate(100deg);
+}
+*/
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-top: -50px;
+  margin-left: -50px;
+  cursor: pointer;
+}
+
+.star:before,
+.star:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid yellow;
+  border-left: 50px solid transparent;
+  transform: rotate(35deg);
+}
+
+.star:after {
+  transform: rotate(-35deg);
+}
+
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
